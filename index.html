@@ -8,11 +8,12 @@
 <html lang="en">
 
 <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Page tag title -->
-    <title>My First Webpage</title>
+    <title>Cycling interest group</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
@@ -36,15 +37,48 @@
             /* .row[class*='col-']{border: 3px solid purple;} */
             /* .show{border: 3px solid purple;} */
         </style>
+
+    <!-- SmartMenus core CSS (required) -->
+    <link href="sm-core-css.css" rel="stylesheet" type="text/css" />
+
+    <!-- "sm-clean" menu theme (optional) -->
+    <link href="sm-clean.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
-    <!-- Top Navigation bar -->
-    <nav class="navbar fixed-top navbar-light bg-light">
+
+<!-- Top Navigation bar -->
+<nav class="navbar fixed-top navbar-light bg-light" id="main-nav">
         <a class="navbar-brand" href="https://www.ibm.com/ibm/sg/en/" target="_blank">
-            <img src="image/ibm_stripblack.png" height="100px" alt="">
+            <img src="image/ibm_stripblue.png" alt="">
         </a>
-    </nav>
+        <ul id="main-menu" class="sm sm-clean">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle wow pulse animated infinite" 
+                 data-wow-delay="300ms" 
+                 data-wow-iteration="infinite" 
+                 data-wow-duration="2s" 
+                 style="visibility: visible; animation-duration: 2s; 
+                 animation-delay: 300ms; animation-iteration-count: 
+                 infinite; animation-name: pulse;" 
+                 href="#">Main menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#MyBicycle1">My Bicycle List 1</a></li>
+              <li><a class="dropdown-item" href="#MyBicycle2">My Bicycle List 2</a></li>
+              <li><a class="dropdown-item" href="#MyVideo1">Video on IMS cycling events</a></li>
+              <li><a class="dropdown-item" href="#MyVideo2">Video on OCBC cycling events</a></li>
+              <li><a class="dropdown-item" href="#RegisterRide">Register for next IMS ride</a></li>
+              <li><a class="dropdown-item" href="#Membersinfo">Members info</a></li>
+            </ul>
+</nav>
+
+<!-- Top Navigation bar -->
+    <!--     <nav class="navbar fixed-top navbar-light bg-light">
+        <a class="navbar-brand" href="https://www.ibm.com/ibm/sg/en/" target="_blank">
+            <img src="image/ibm_stripblue.png" height="100px" alt="">
+        </a>
+    </nav>    -->
 
     <!-- CONTAINER - code entire page contents within this div class="container"-->
     <div class="container-fluid">
@@ -58,30 +92,52 @@
                 <!-- Jumbotron example -->
                 <div class="jumbotron jumbotron-fluid">
                     <div class="container">
-                        <h1 class="display-4">Hello world!<br>Fluid jumbotron</h1>
-                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                        <h1 class="display-4">IMS Cycling Interest Group<br>Member's web page</h1>
+                        <p class="lead">Keep your mind calm and keep paddling.<br>
+                            Feel the cool breeze flowing by your body.<br>
+                            Have a good workout and burn off excess calories.</p><br>
+                    
+                    <a class="btn btn-success btn-md" 
+                        href="https://www.ocbccycle.com/?cid=sg%3Aen%3Agcc%3Acycle%3AOCBC%3ACYCLE_2018%3AJANUARY%3A2018%3Asem%3AGOOGLE%3ACPC%3AGENERIC%3A%2Bsingapore%20%2Bcycling%3ABMM%3A&utm_source=GOOGLE&utm_medium=CPC&utm_campaign=CYCLE_2018&utm_content=GENERIC"
+                        role="button" target="_blank">  Upcoming event<br>
+                                                        OCBC Cycle<br>
+                                                        5 - 6 May 2018<br>
+                                                        Singapore Sports Hub</a>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
         <!-- end of ROW1: Jumbotron -->
 
+<!-- <a name="MyBicycle"></a> -->
         <!-- ROW2: Image-Thumbnails -->
-        <div class="row">
-
+        <div class="row pad-top" id="MyBicycle1">
+               
             <!-- Row2 Col1of3 -->
             <div class="col-xs-12
                         col-sm-4
                         col-md-4
                         col-lg-4 show">
 
-                <!-- Image Thumbnail -->
+                <!-- Image Thumbnail -->                
                 <div class="img-thumbnail">
-                    <img src="http://placehold.it/800x600" class="img-fluid rounded" alt="">
+                    <img src="image/Tern_Verge.jpg" class="img-fluid rounded" alt="">
                     <div class="card-body">
-                        <h3>title</h3>
-                        <p>quick brown fox jumps over the lazy dog.</p>
-                        <a href="#" class="btn btn-primary btn-sm">click</a>
+                        <h3>My Tern Verge N8</h3>
+                        <p>
+                        Specification<br>
+                        Wheel Size: 20" wheels<br>
+                        Weight: 11.0 kg (24.2 lb)<br>
+                        Folding Size: 38 x 79 x 72 cm (15" x 31.1" x 28.3")<br>
+                        Frame: Tern Verge, hydroformed aluminum, 3 patented technologies<br>
+                        Crankset: Forged 6061 aluminum, 52T<br>
+                        Rear Derailleur: Shimano Claris<br>
+                        Shifter(S): Shimano trigger, 1x8 spd<br>
+                        Cassette/Freewheel: Shimano 8 spd, 11-32T<br>
+                        Rims: Doublewall aluminum<br>
+                        Tires: Schwalbe Kojak, 35-406, 95 psi, puncture protection
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary btn-sm">click</a> -->
                     </div>
                 </div><br>
             </div>
@@ -95,11 +151,23 @@
 
                 <!-- Image Thumbnail -->
                 <div class="img-thumbnail">
-                    <img src="http://placehold.it/800x600" class="img-fluid rounded" alt="">
+                    <img src="image/Dahon_Route.jpg" class="img-fluid rounded" alt="">
                     <div class="card-body">
-                        <h3>title</h3>
-                        <p>quick brown fox jumps over the lazy dog.</p>
-                        <a href="#" class="btn btn-primary btn-sm">click</a>
+                        <h3>My Dahon Route (2014)</h3>
+                        <p>
+                        Specification<br>
+                        Wheel Size: 20 inch<br>
+                        Weight: 12.2 kg<br>
+                        Folding Size (cm): W 89 × H 64 × D 34<br>
+                        Frame: 7005 Alloy frame, Vice grip technology<br>
+                        Crankset: Aluminum, 52T, w / double chainguard<br>
+                        Derailleur/R: Shimano Tourney, RD-FT 35, 7 spd<br>
+                        Shifter: Microshift MS -25<br>
+                        Cassette: Shimano MF-TZ 21, 14-28 T<br>
+                        Rims: Aluminum, single wall<br>
+                        Tires: Kenda Kwest, 20 × 1.50, E / V
+                        </p>
+                        <!-- a href="#" class="btn btn-primary btn-sm">click</a> -->
                     </div>
                 </div><br>
             </div>
@@ -113,36 +181,222 @@
 
                 <!-- Image Thumbnail -->
                 <div class="img-thumbnail">
-                    <img src="http://placehold.it/800x600" class="img-fluid rounded" alt="">
+                    <img src="image/Dahon_Curve.jpg" class="img-fluid rounded" alt="">
                     <div class="card-body">
-                        <h3>title</h3>
-                        <p>quick brown fox jumps over the lazy dog.</p>
-                        <a href="#" class="btn btn-primary btn-sm">click</a>
+                        <h3>My Dahon Curve D7</h3>
+                        <p>
+                        Specification<br>
+                        Wheel Size: 16″<br>
+                        Bike weight: 11.6kg<br>
+                        Folding Size: W73 × H60 × D34cm<br>
+                        Frame: 16" PJ Series, Dalloy Sonus Aluminum, V-Clamp technologies<br>
+                        Crankset: Cold-forged 6061-T6 aluminum, 52T, double chainguard<br>
+                        Rear Derailleur: Shimano RD-FT35 SS, 7spd<br>
+                        Shifter(s):	Shimano SL-RS35-7R, Revo shift<br>
+                        Cassette: Shimano CS-HG41-7, 11-28T<br>
+                        Rims: Aluminum<br>
+                        Tires: Kenda, Kwest 16"×1.50, E/V
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary btn-sm">click</a> -->
                     </div>
                 </div><br>
             </div>
             <!-- end of ROW2 Col3of3 -->
-        </div>
-        <!-- end of Row2: Image-Thumbnails -->
 
-        <!-- ROW3: Video -->
-        <div class="row">
+        </div> <!-- end of row -->
+
+<!-- <a name="MyBicycle"></a> -->
+        <!-- ROW3: Image-Thumbnails -->
+        <div class="row pad-top" id="MyBicycle2">
+
+            <!-- ROW3 Col1of3 -->
             <div class="col-xs-12
-                        col-sm-12
-                        col-md-12
-                        col-lg-12">
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 show">
+
+                <!-- Image Thumbnail -->
+                <div class="img-thumbnail">
+                    <img src="image/KHS.jpg" class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h3>My KHS F20 - R</h3>
+                        <p>Specification<br>
+                        Wheel size: 20" Wheel<br>
+                        Bike weight: 11.5kg<br>
+                        Folding Size: 32"L x 22"H x 14"W<br>
+                        Frame: Reynolds 500 double butted camo, KHS 451 frame<br>
+                        Crankset: Truvativ 3-Piece 170mm crank, 53/39t chainwheel<br>
+                        Derailleur, Front: Shimano Tiagra<br>
+                        Derailleur, Back: Shimano 105<br>
+                        Shift Levers: Shimano STI<br>
+                        Rear Cassette: 9-speed 11-23T (18-speed bicycle)<br>
+                        Rims: Silver anodized alloy<br>
+                        Tires: 20" x 1.160 TPI 100psi (451)<br>
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary btn-sm">click</a> -->
+                    </div>
+                </div><br>
+            </div>
+            <!-- end of ROW3 Co11of3 -->
+     
+            <!-- ROW3 Col2of3 -->
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 show">
+
+                <!-- Image Thumbnail -->
+                <div class="img-thumbnail">
+                    <img src="image/Drake_Pro.jpg" class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h3>My Drake Pro 7 SL</h3>
+                        <p>Specification<br>
+                        Wheel size: 20"<br>
+                        Weight: 12kg<br>
+                        Fork: Alloy, Curved Blade W/pivot<br>
+                        Frame: 6061 Aluminium Alloy Frame, TIG Welded W/pivot, Peerless Patented Latch System<br>
+                        Crankset: SAMXO AF13 w/52T<br>
+                        Head Sets: 1-1/8″ integrated bearing<br>
+                        Hub/F: Quando High Performance Hub 100mm Black 28H, w/QR<br>
+                        Hub/R: Quando High Performance Hub 130mm Black 28H, w/QR<br>
+                        Rims: 20″ AV 28H Black+Indicator<br>
+                        Tires: 32-406 20×1.25 Kenda Kwest<br>
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary btn-sm">click</a> -->
+                    </div>
+                </div><br>
+            </div>                
+            <!-- end of ROW3 Co12of3 -->
+      
+            <!-- ROW3 Col3of3 --> 
+            <div class="col-xs-12
+                        col-sm-4
+                        col-md-4
+                        col-lg-4 show">
+
+                <!-- Image Thumbnail -->   
+                <div class="img-thumbnail">
+                    <img src="image/Aleoca.jpg" class="img-fluid rounded" alt="">
+                    <div class="card-body">
+                        <h3>My Aleoca Conveniente</h3>
+                        <p>Specification<br>
+                        Wheel size: 14"<br>
+                        Weight: 16.5kg<br>
+                        Frame: Hi-ten Steel<br>
+                        Crankset: Single speed<br>
+                        Tires: 14"<br>
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary btn-sm">click</a> -->
+                    </div>
+                </div><br>
+            </div>
+            <!-- end of ROW3 Co13of3 -->
+        </div>
+        <!-- end of Row3: Image-Thumbnails -->
+
+<!-- <a name="MyVideo"></a> -->
+        <!-- ROW4: Video col1of2 -->
+        <div class="row pad-top" id="MyVideo1">
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6">
 
                 <!-- Embed Video -->
+                <div class="video_title">
+                    <h5>IMS Cycling Interest Group ride</h5>
+                    <h5>15 May 2015 (Friday) Ride to Changi Village</h5>
+                </div>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qTSDL94_Y7M" 
-                        allow="encrypted-media"allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/J_kg9z4q6a4" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
+                </div>
+                <div class="video_text">
+                    Event Highlight :<br>
+                    5.00 pm Meet at ISTP carpark<br>
+                    6.00 pm Meet at bicycle rental kiost at Ease Coast Park carpark C4<br>
+                    6.10 pm Safety Briefing and route information<br>
+                    6.15 pm East Coast Park to Changi Village<br>
+                    7.15 pm Break for dinner at Changi Village hawker center<br>
+                    7.45 pm Ride back to East Coast Park via Changi Coastal PCN<br>
+                    8.30 pm Return to ISTP (own bicycle)<br>
+                    9.00 pm Return to East Coast Park return bicycle at rental kiosk<br>
                 </div>
             </div>
-        </div><br>
-        <!-- end of ROW3: Video -->
+        <!-- End of row 4 video col10f2 -->
+        
+        <!-- ROW4: Video col 2of2-->
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6">
 
-        <!-- ROW4: Form & Text -->
-        <div class="row">
+                <!-- Embed Video -->
+                <div class="video_title">
+                    <h5>IMS Cycling Interest Group ride</h5>
+                    <h5>19 May 2016 (Thursday) Marina South ride</h5>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FSiW_tdlCd0" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="video_text">
+                    Event highlight :<br>
+                    5.00 pm Meet at ISTP carpark<br>
+                    5.30 pm Bedok Reservior PCN to East Coast Park<br>
+                    6.00 pm Meet at East Coast Park carpark C4<br>
+                    6.10 pm Safety Briefing and route information<br>
+                    6.15 pm East Coast Park to Marina Bay East<br>
+                    7.00 pm Marina Barrage to Marina South Pier<br>
+                    8.00 pm Break for dinner at Lau Pa Sat<br>
+                    9.00 pm Return to ISTP or MRT home<br>
+                </div>
+            </div>
+        </div>
+        <!-- End of row 4 video col20f2 -->
+
+        <!-- ROW5: Video col 1of2-->
+        <div class="row pad-top" id="MyVideo2">
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6">
+
+                <!-- Embed Video -->
+                <div class="video_title">
+                    <h4>IBM Cycling Club OCBC Cycle 2017</h4><br>
+                    <h5>Video cam 1</h5><br>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WMLX8jjd0Xk" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        <!-- End of row 5 video col10f2 -->
+
+        <!-- ROW5: Video col 2of2-->
+            <div class="col-xs-12
+                        col-sm-6
+                        col-md-6
+                        col-lg-6">
+
+                <!-- Embed Video -->
+                <div class="video_title">
+                    <h4>IBM Cycling Club OCBC Cycle 2017</h4><br>
+                    <h5>Video cam 2</h5><br>
+                </div>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0W-MbAQCI_s" 
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        <!-- End of row 5 video col20f2 -->        
+        </div><br><br>
+<!-- end of ROW5: Video -->
+
+<!-- <a name="Request"></a> -->
+    <!-- ROW4: Form & Text -->
+        <div class="row pad-top"id="RegisterRide">
 
             <!-- Row4 Col1of2: Form -->
             <div class="col-xs-12
@@ -158,23 +412,23 @@
                         <form action="https://script.google.com/macros/s/AKfycbx2UwJqxaPmLYMRvqenC3y1glMyJJAdgeqlYTrLaKvfgSpZaNTr/exec" 
                             method="post">
 
-                            <legend class="card-header">Sign up</legend>
-                            <br>
+                            <legend class="card-header">Join the ride with IMS Cycling Interest Group</legend>
+                                <br>
                             <div class="form-group">
                                 <label for="name-id">Name: </label>
-                                <input type="text" name="NAME" id="name-id" placeholder="frank lee" class="form-control" required>
+                                <input type="text" name="NAME" id="name-id" placeholder="Your Name" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="email-id">Email: </label>
-                                <input type="email" name="EMAIL" id="email-id" placeholder="franklee@email.com" class="form-control" required>
+                                <input type="email" name="EMAIL" id="email-id" placeholder="your_email_address@email.com" class="form-control" required>
                             </div>
-                            <br>
+                                <br><br>
                             <!-- <div class="form-group">
                                 <input type="submit" class="btn btn-primary">
                             </div> -->
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary my-btn form-control" id="submit-id">submit</button>                   
-                                <hr>
+                                <!-- <hr> -->
                                 <!-- alert-dismissible fadeIn -->
                                 <div class="alert alert-danger alert-dismissible fadeIn" id="alert-id" hidden>
                                     <button type="button" class="close" id="close-id"><span>&times;</span></button>
@@ -187,30 +441,44 @@
                 </div><br>
             </div>
             <!-- end of Row4 Col1of2: Form -->
-
+        
             <!-- ROW4 Col2of2: Text -->
+        
             <div class="col-xs-12
                         col-sm-6
                         col-md-6
-                        col-lg-6
-                        text-center show">
+                        col-lg-6 show">
+                        <!-- text-center show -->
 
-                <h1>MY TITLE</h1>
-                <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                    laborum.
-                </p>
+                    <!-- Events -->
+                    <div class="card card-default">
+                        <div class="card-body">
+                
+                        <h1>Past calendar of cycling events</h1>
+                        <hr>
+                        <p>
+                         6 Feb 2015 Cycling by the Bay<br>    
+                        17 Apr 2015 Ride to Barrage/MBS<br>   
+                        15 May 2015 Ride to Changi Village<br>
+                        21 Aug 2015 SG50 ride<br>
+                        15 Apr 2016 Northern loop ride<br>
+                        19 May 2016 Marina south ride<br>
+                        11 Aug 2016 Ride to Dakota Estate<br>
+                        13 Apr 2017 Changi coastal's last<br>
+                         7 Jul 2017 Tana Merah Coast road<br>
+                         4 Aug 2017 SG52 ride<br>
+                         2 Feb 2018 Ride to Marina Bay<br>                    
+                        </p>
+                        </div>
+                    </div><br>
             </div>
-            <!-- end of ROW4 Col2of2: Text -->
-        </div><br>
-        <!-- end of ROW4: Form & Text -->
+        </div>        
+        <!-- end of ROW4 Col2of2: Text -->
+
+    <!-- end of ROW4: Form & Text -->
 
         <!-- ROW5: Details -->
-        <div class="row">
+        <div class="row pad-top" id="Membersinfo">
             <!-- ROW5 Col1of3: Table -->
             <div class="col-xs-12
                         col-sm-4
@@ -218,26 +486,42 @@
                         col-lg-4 show">
 
                 <!-- Table -->
-                <h3>Table Title</h3>
+                <h3>Members info</h3>
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Header Col 1</th>
-                            <th>Header Col 2</th>
+                            <th>Member's name</th>
+                            <th>Member's name</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>row 1</td>
-                            <td>row 1</td>
+                            <td>William Lim</td>
+                            <td>Andy Ng</td>
                         </tr>
                         <tr>
-                            <td>row 2</td>
-                            <td>row 2</td>
+                            <td>Victor Chong</td>
+                            <td>Casey Ng</td>
                         </tr>
                         <tr>
-                            <td>row 3</td>
-                            <td>row 3</td>
+                            <td>Jon Vitas</td>
+                            <td>Conner Pang</td>
+                        </tr>
+                        <tr>
+                            <td>Kelly Lieu</td>
+                            <td>BB Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Jorge</td>
+                            <td>Tak Wai</td>
+                        </tr>
+                        <tr>
+                            <td>Yin Sun</td>
+                            <td>Tracy Nguyen</td>
+                        </tr>
+                        <tr>
+                            <td>Chung Kiat</td>
+                            <td>Keng Kiat</td>
                         </tr>
                     </tbody>
                 </table><br>
@@ -263,33 +547,49 @@
                         col-md-4
                         col-lg-4 show">
                 <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fab fa-telegram fa-2x"></i> Item One
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fab fa-telegram fa-2x"></i> Item Two
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fab fa-telegram fa-2x"></i> Item Three
-                    </a>
+                    <a href="tel:6566037013" class="list-group-item list-group-item-action">
+                        <i class="fa fa-phone fa-2x"></i>  65 - 66037013 </a>
+                    <a href="mailto:WilliamLim@ims.com.sg" class="list-group-item list-group-item-action">
+                        <i class="fa fa-envelope fa-2x"></i>  WilliamLim@ims.com.sg </a>
+                    <a href="https://www.google.com.sg/maps/@1.373069,103.929703,16z"target="_blank" class="list-group-item list-group-item-action">
+                        <i class="fas fa-map-marker fa-2x"></i>  6 Tampines Ind Ave 5 </a>
                 </div>
+                <!--
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-check-square"></i>Contact me by :</li>
+                    <li><i class="fa-li fa fa-spinner fa-spin"></i>Letter : 2 Tampines Ind Ave 5</li>
+                    <li><i class="fa-li fa fa-home"></i>Email : LIMWLW@SG.IBM.COM</li>
+                </ul>
+                -->
             </div>
+                
             <!-- end of ROW5 Col3: List group -->
         </div><hr>
         <!-- end of ROW5: Details -->
-
+        
         <!-- ROW6: Footer -->
-        <div class="row">
+        <div class="row pad-top">
             <div class="col-xs-12
                         col-sm-12
                         col-md-12
                         col-lg-12">
                 <ul class="list-inline text-center">
                     <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://en-gb.facebook.com/login/" target="_blank">
                             <i class="fab fa-facebook-square fa-3x"></i>
                         </a>
                     </li>
+                    <li class="list-inline-item">
+                            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                                <i class="fab fa-instagram fa-3x"></i>
+                            </a>
+                    </li>
+                    <li class="list-inline-item">
+                            <a href="https://www.google.com.sg" target="_blank">
+                                <i class="fab fa-google fa-3x"></i>
+                            </a>
+                    </li>
+                    <!--
                     <li class="list-inline-item">
                         <a href="#">
                             <i class="fab fa-twitter-square fa-3x"></i>
@@ -298,6 +598,7 @@
                     <li class="list-inline-item">
                         <a href="#">
                             <i class="fab fa-linkedin fa-3x"></i>
+                        -->
                         </a>
                     </li>
                 </ul>
@@ -316,6 +617,21 @@
   
     <!-- Customise JavaScript -->
     <script src="javascript/javascript.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="javascript/jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery init -->
+    <script type="text/javascript">
+        $(function() {
+            $('#main-menu').smartmenus({
+                mainMenuSubOffsetX: -1,
+                mainMenuSubOffsetY: 4,
+                subMenusSubOffsetX: 6,
+                subMenusSubOffsetY: -6
+            });
+        });
+    </script>
 
 </body>
 
